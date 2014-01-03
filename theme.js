@@ -11,7 +11,7 @@ console.log("hello, world!")
 
 
 // if you don't want your site to be responsive, comment out or delete this
-// for more info, read: 
+// for more info, read:
 
 $(document).ready(function() {
   $('head').append("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
@@ -21,3 +21,52 @@ $(document).ready(function() {
  $(".span12").append($(".project").get().reverse());
 });
 
+// call isotope
+/*
+$(document).ready(function() {
+	var $container = $('.span12');
+	// init
+	$container.isotope({
+	  // options
+	  itemSelector: '.project',
+	  layoutMode: 'fitRows'
+	});
+});
+*/
+
+
+var container = document.querySelector('.span12');
+// init
+var iso = new Isotope( container, {
+  // options
+  itemSelector: '.project',
+  layoutMode: 'fitRows'
+});
+
+$(document).ready(function() {
+
+	//	fix logo position on scroll
+	$(document).scroll(function() {
+
+		var top = $(document).scrollTop();
+		console.log(top);
+		if (top > 500) $('.assets-logo-01').addClass('js-fixed');
+		/*  if (top === 0) $('nav').removeClass("drop-shadow"); */
+
+	});
+
+	$('.close-text-layer').click(function () {
+		$(this).toggleClass('js-is-open');
+		$('.text-layer').toggleClass('js-grow');
+	});
+
+  // console
+  console.log('barf');
+
+
+
+});
+
+$(document).ready(function () {
+
+});

@@ -53,3 +53,103 @@ a {
   line-height: 1.66667;
   max-width: 600px;
 }
+
+/* custom */
+
+.readme {
+display: none;
+}
+
+img {
+max-width: auto;
+height: auto;
+margin-right: 20px;
+}
+
+.project img {
+z-index: 0;
+}
+
+.site-title {
+text-indent: -9999999px;
+/*
+width: 100%;
+height: 2000px;
+background: transparent url(https://dl.dropboxusercontent.com/s/cfv6eh71f9nra8c/01-salon_de_refuses_logo.png) no-repeat center top;
+background-size: contain;
+z-index: 9999999;
+*/
+}
+
+.assets-logo-01 {
+position: absolute !important;
+top: 0 !important;
+left: 0;
+z-index: 99999;
+width: 100%;
+}
+
+/* text layer */
+.text-layer {
+position: fixed !important;
+z-index: 999;
+top: 0 !important;
+left: 0;
+background-color: rgba(0, 0, 0, 0.9);
+color: white;
+width: 0;
+height: 0;
+overflow: hidden;
+transition: all .1s ease-in-out;
+-moz-transition: all .1s ease-in-out;
+-webkit-transition: all .1s ease-in-out;
+-o-transition: all .1s ease-in-out;
+border-radius: 999px;
+-moz-border-radius: 999px;
+-webkit-border-radius: 999px;
+}
+
+.text-layer-contents {
+position: relative;
+z-index: 999999;
+}
+
+.close-text-layer {
+position: fixed;
+bottom: 20px;
+right: 20px;
+color: #ffffff;
+font-size: 50px;
+background-color: #005de9;
+height: 60px;
+width: 60px;
+border-radius: 999px;
+-moz-border-radius: 999px;
+-webkit-border-radius: 999px;
+}
+
+.close-text-layer.js-is-open  {
+background-color: #ff1f1f;
+}
+
+.salon {
+display: none;
+}
+
+footer {
+display: none;
+}
+
+/* some javascript helpers */
+.js-fixed {
+position: fixed !important;
+}
+
+.js-grow {
+height: 100%;
+width: 100%;
+overflow: visible;
+border-radius: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+}

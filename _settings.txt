@@ -1,7 +1,7 @@
 # You can change these, and soon they will be read and updated
 
 domain: 6471827.smallvictori.es
-title: A Small Victory
+title: Salon de Refus&#233;s
 
 # To set up a custom URL:
 #
