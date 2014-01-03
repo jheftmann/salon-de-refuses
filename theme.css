@@ -126,6 +126,7 @@ width: 60px;
 border-radius: 999px;
 -moz-border-radius: 999px;
 -webkit-border-radius: 999px;
+z-index: 9999999;
 }
 
 .close-text-layer.js-is-open  {

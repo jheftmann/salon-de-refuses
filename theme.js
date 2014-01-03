@@ -49,13 +49,13 @@ $(document).ready(function() {
 	$(document).scroll(function() {
 
 		var top = $(document).scrollTop();
-		console.log(top);
 		if (top > 500) $('.assets-logo-01').addClass('js-fixed');
 		/*  if (top === 0) $('nav').removeClass("drop-shadow"); */
 
 	});
 
 	$('.close-text-layer').click(function () {
+		$('body').toggleClass('js-is-open');
 		$(this).toggleClass('js-is-open');
 		$('.text-layer').toggleClass('js-grow');
 	});
